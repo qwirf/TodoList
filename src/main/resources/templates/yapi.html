@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<head>
+    <title>yapi</title>
+</head>
+<body>
+    <li th:each="title : ${titles}">
+        <span th:text="${title}"></span>
+        <form th:action="@{/delnote}" method="POST" style="display:inline;">
+            <input type="hidden" name="inputTextfordel" th:value="${title}" />
+            <button type="submit">Удалить</button>
+        </form>
+    </li>
+    <a href="/">добавить заметочку!!!!</a>
+</body>
