@@ -24,6 +24,6 @@ public class delNote {
                 repositoryu.delete(onemodel);
             }
         }
-        return new ModelAndView("redirect:/yapi");
+        return new ModelAndView("redirect:/Notes");
     }
 }

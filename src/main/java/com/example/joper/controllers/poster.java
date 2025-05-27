@@ -8,12 +8,12 @@ import com.example.joper.repositories.repository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
-@Controller("/savel")
+@Controller("/SAVE")
 public class poster {
 
     @Autowired
     private repository repositoryone;
-    @PostMapping("savel")
+    @PostMapping("/SAVE")
     public String zasev(@RequestParam("text")String text){
         repositoryone.save(new onemodel(text));
         return "redirect:/";
